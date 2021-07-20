@@ -1,0 +1,85 @@
+span {
+    font-weight: 500;
+}
+
+.container {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.container header h1 {
+    font-size: 3.4rem;
+    font-weight: 300;
+}
+
+.container main p {
+    font-size: 2.4rem;
+    max-width: 35ch;
+    line-height: 1.5;
+    margin: 2rem 0;
+}
+
+.container form .inputContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 30rem;
+    border: 1px solid #E5E5E5;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.container form .inputContainer input {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    color: #2D3748;
+    font-weight: 300;
+}
+
+.container form .inputContainer .button {
+    background: #68D391;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 1rem auto;
+    }
+    .container main p {
+        font-size: 1.8rem;
+        width: auto;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+    .container header h1 {
+        font-size: 2.2rem;
+    }
+
+    .container main p {
+        font-size: 1.4rem;
+        width: auto;
+        line-height: 1.5;
+    }
+
+    .container form .inputContainer input {
+        font-size: .8rem;
+    }
+
+    .container form .inputContainer .button {
+        padding: .5rem;
+    }
+}
