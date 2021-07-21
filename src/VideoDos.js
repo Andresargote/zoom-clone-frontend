@@ -386,10 +386,10 @@ class VideoDos extends Component {
               let video = document.createElement("video");
 
               let css = {
-               /*  minWidth: cssMesure.minWidth,
+                /*  minWidth: cssMesure.minWidth,
                 minHeight: cssMesure.minHeight, */
                 maxWidth: "40rem",
-                maxHeight: "30rem"
+                maxHeight: "30rem",
               };
 
               for (let i in css) video.style[i] = css[i];
@@ -397,9 +397,8 @@ class VideoDos extends Component {
               /* video.style.setProperty("width", css.width);
               video.style.setProperty("height", css.height); */
               divContainer.classList.add(styles.videoContainerContainer);
-              divContainer.appendChild(video)
-              video.classList.add(styles.video)
-              video.style.setProperty("background", "#252525")
+              divContainer.appendChild(video);
+              video.classList.add(styles.video);
               video.setAttribute("data-socket", socketListId);
               video.srcObject = event.stream;
               video.autoplay = true;
