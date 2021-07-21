@@ -1,8 +1,8 @@
 .setName {
   width: 100%;
   background: #000;
-  height: 100vh;
 
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +64,7 @@
   max-width: 40rem;
   max-height: 30rem;
   width: 100%;
+  height: auto;
   border-radius: 0.5rem;
 }
 

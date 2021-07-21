@@ -44,6 +44,8 @@ class VideoDos extends Component {
 
     connections = {};
 
+    console.log(this.localVideoref);
+
     this.getPermissions();
   }
 
@@ -397,6 +399,7 @@ class VideoDos extends Component {
               divContainer.classList.add(styles.videoContainerContainer);
               divContainer.appendChild(video)
               video.classList.add(styles.video)
+              video.style.setProperty("background", "#252525")
               video.setAttribute("data-socket", socketListId);
               video.srcObject = event.stream;
               video.autoplay = true;
@@ -577,7 +580,9 @@ class VideoDos extends Component {
                     autoPlay
                     muted
                   ></video>
-                  <span>{this.state.username}</span>
+                  {this.state.username !== "" && (
+                    <span>{this.state.username}</span>
+                  )}
                 </div>
               </div>
             </div>
